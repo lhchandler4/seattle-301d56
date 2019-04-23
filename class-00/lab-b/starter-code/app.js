@@ -189,4 +189,4 @@ console.log(joe.scopeArrow());
 // 2. What is "this" when joe.scopeArrow() is invoked?
 // this would refer to the joe.scopeArrow() because arrow notation makes it not able to refer back to the Student object.
 // 3. Explain why "this" is different when an arrow function is used.
-// Would it have to do with the scope of arrow function notation? 
+// It would have to do with the scope of arrow function notation. An arrow function binds 'this' in the closure that's created when the function is created (the scope of the function). Therefore it doesn't set 'this' to the context of the function when it is called.
